@@ -68,7 +68,7 @@ nav {
     border-radius: 30px;
     color: white;
     font-size: 12px;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 50px 70px;
 }
 .second-image {
     height: 30%;
@@ -172,13 +172,21 @@ a {
 i {
     margin: 10px;
 }
-.Copyright {
+.copyright {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     color: white;
     font-size: 12px;
+}
+.get-started:hover, .get-started-second:hover {
+    background-color: grey;
+    transition: 0.2s ease-in;
+}
+.try-it:hover {
+    background-color: grey;
+    transition: 0.2s ease-out;
 }
 @media only screen and (min-width: 1400px) {
     nav {
@@ -188,9 +196,134 @@ i {
         height: 15%;
         width: 15%;
     }
+    #first {
+        height: 50vw;
+        background-color: hsl(193, 100%, 96%);
+        background-image: url(images/bg-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .try-it {
         height: 50px;
         width: 200px;
     }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .head {
+        margin: 0px 50px 50px 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        height: 25vw;
+        width: 58vw;
 
+
+    }
+    .head > p {
+        font-size: 21px;
+        margin: 0;
+    }
+    #chat {
+        margin: 0px 100px 100px 100px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .get-started {
+        border-radius: 50px;
+        margin-top: 40px;
+        height: 4vw;
+        width: 16vw;
+    }
+    .get-started > p {
+        font-size: 18px;
+    }
+    .three-containers {
+        display: block;
+        height: 30vw;
+        margin: 40px 120px 40px 120px;
+    }
+    .first {
+        margin-top: 180px;
+    }
+    .second-image {
+        float: right;
+    }
+    .three-containers > h2 {
+        position: relative;
+        top: 200px;
+        left: 150px;
+        font-size: 32px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .three-containers > p {
+        position: relative;
+        padding: 0px;
+        text-align: left;
+        font-size: 18px;
+        width: 520px;
+        top: 200px;
+        left: 150px;
+    }
+    .second-image {
+        margin: 50px;
+        height: 80%;
+    }
+    .left {
+        float: left;
+    }
+    .second > p {
+        width: 80%; 
+    }
+    .community {
+        margin-top: 170px;
+
+        margin-bottom: -100px;
+        height: 16vw;
+        margin-right: 450px;
+        margin-left: 450px;
+    }
+    .get-started-second {
+        margin-top: 20px;
+        height: 25%;
+        width: 40%;
+        border-radius: 50px;
+    }
+    .community > h3 {
+        font-size: 30px;
+    }
+    .get-started-second > p {
+        font-size: 18px;
+    }
+    #huddle-footer {
+        
+    }
+
+    .info {
+        padding: 0px;
+    }
+    .info-container {
+        padding: 0px 0px 0px 20px;
+        width: 450px;
+    }
+    .info-container > p {
+        font-size: 18px;
+    }
+    .all {
+        margin: 100px 100px 0px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copyright {
+        padding: 50px;
+        color: white;
+        justify-content: right;
+    }
 }
